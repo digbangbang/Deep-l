@@ -13,7 +13,7 @@
 Fashion-MNIST数据集，图片类型数据，图片存储为(1, 28, 28)，数据如下
 
 <div style="display: flex; justify-content: center; align-items: center;">
-  <img src="/Users/lizhiwei/Documents/code/cls/fmnist.png" alt="Image" style="width: 90%; margin: 10px;">
+  <img src="cls/fmnist.png" alt="Image" style="width: 90%; margin: 10px;">
 </div>
 
 ## 反向传播公式
@@ -71,13 +71,13 @@ $$
 实验设置采用余弦退火的学习率，隐藏层数对实验影响如下
 
 <div style="display: flex; justify-content: space-between;">
-  <img src="/Users/lizhiwei/Documents/code/cls/lr.png" alt="Image 1" style="width: 46%; margin: 10px;">
-  <img src="/Users/lizhiwei/Documents/code/cls/test_acc_combine.png" alt="Image 2" style="width: 46%; margin: 10px;">
+  <img src="cls/lr.png" alt="Image 1" style="width: 46%; margin: 10px;">
+  <img src="cls/test_acc_combine.png" alt="Image 2" style="width: 46%; margin: 10px;">
 </div>
 
 <div style="display: flex; justify-content: space-between;">
-  <img src="/Users/lizhiwei/Documents/code/cls/train_loss.png" alt="Image 3" style="width: 46%; margin: 10px;">
-  <img src="/Users/lizhiwei/Documents/code/cls/val_loss.png" alt="Image 4" style="width: 46%; margin: 10px;">
+  <img src="cls/train_loss.png" alt="Image 3" style="width: 46%; margin: 10px;">
+  <img src="cls/val_loss.png" alt="Image 4" style="width: 46%; margin: 10px;">
 </div>
 
 ## 模型调优
