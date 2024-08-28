@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/lizhiwei/Documents/code/cls/cls.py", line 17, in <module>
+    model = NeuralNetwork(input_size, hidden_size, output_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: NeuralNetwork.__init__() takes 3 positional arguments but 4 were given

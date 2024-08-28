@@ -1,0 +1,39 @@
+{
+    "os": "macOS-10.16-x86_64-i386-64bit",
+    "python": "3.12.4",
+    "heartbeatAt": "2024-08-28T06:34:59.800561",
+    "startedAt": "2024-08-28T06:34:58.880957",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/Users/lizhiwei/Documents/code/cls/cls.py",
+    "codePathLocal": "cls.py",
+    "codePath": "cls.py",
+    "host": "MBP-2FFHVHMD6M-0121.local",
+    "username": "lizhiwei",
+    "executable": "/Users/lizhiwei/miniconda3/envs/cls/bin/python",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 2600,
+        "min": 2600,
+        "max": 2600
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2600,
+            "min": 2600,
+            "max": 2600
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 465.62699127197266,
+            "used": 13.410076141357422
+        }
+    },
+    "memory": {
+        "total": 16.0
+    }
+}

@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/lizhiwei/Documents/code/cls/cls.py", line 18, in <module>
+    train(model, x_train, y_train, x_val, y_val, epochs, learning_rate, regularization_strength, x_test, y_test)
+  File "/Users/lizhiwei/Documents/code/cls/train.py", line 11, in train
+    best_weights = model.weights1, model.bias1, model.weights2, model.bias2
+                                                ^^^^^^^^^^^^^^
+AttributeError: 'NeuralNetwork' object has no attribute 'weights2'. Did you mean: 'weights1'?
