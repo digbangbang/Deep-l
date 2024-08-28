@@ -19,7 +19,7 @@ Fashion-MNIST数据集，图片类型数据，图片存储为(1, 28, 28)，数�
 
 ## 反向传播公式
 
-以两层隐藏层为例，简单记一层参数分别为$W_1$和$b_1$，第二层参数分别为$W_2$和$b_2$，Softmax为$softmax$，Relu为$Relu$，那么两层隐藏层的MLP的预测结果可以表示为
+以两层隐藏层为例，简单记一层参数分别为 $W_1$ 和 $b_1$，第二层参数分别为 $W_2$和 $b_2$，Softmax为 $softmax$，Relu为$ Relu$，那么两层隐藏层的MLP的预测结果可以表示为
 
 $$\hat{y} = softmax(W_2(Relu(W_1X + b_1)) + b_2)$$
 
@@ -28,13 +28,13 @@ $$\hat{y} = softmax(W_2(Relu(W_1X + b_1)) + b_2)$$
 $$l = -\sum y_i\ log\ \hat{y}_i$$
 
 
-使用中间变量$z = W_2(Relu(W_1X + b_1)) + b_2$，于是$\hat{y} = softmax(z)$使用链式法则求导，那么第二层梯度为
+使用中间变量 $z = W_2(Relu(W_1X + b_1)) + b_2$，于是 $\hat{y} = softmax(z)$使用链式法则求导，那么第二层梯度为
 
 $$\frac{\partial l}{\partial W_2} = \frac{\partial l}{\partial \hat{\textbf{y}}}\cdot\frac{\partial \hat{\textbf{y}}}{\partial z}\cdot\frac{\partial z}{\partial W_2}$$
 
 $$\frac{\partial l}{\partial b_2} = \frac{\partial l}{\partial \hat{\textbf{y}}}\cdot\frac{\partial \hat{\textbf{y}}}{\partial z}\cdot\frac{\partial z}{\partial b_2}$$
 
-使用中间变量$s = W_1X+b_1$和$t=Relu(s)$，于是$z=W_2t+b_2$，那么第一层梯度为
+使用中间变量 $s = W_1X+b_1$和 $t=Relu(s)$，于是 $z=W_2t+b_2$，那么第一层梯度为
 
 $$\frac{\partial l}{\partial W_1} = \frac{\partial l}{\partial \hat{\textbf{y}}}\cdot\frac{\partial \hat{\textbf{y}}}{\partial z}\cdot\frac{\partial z}{\partial t}\cdot\frac{\partial t}{\partial s}\cdot\frac{\partial s}{\partial W_1}$$
 
@@ -56,15 +56,16 @@ $$\frac{\partial l}{\partial W_1} = (\hat{\textbf{y}} - \textbf{y})\cdot W_2^T\c
 
 $$\frac{\partial l}{\partial b_1} = (\hat{\textbf{y}} - \textbf{y})\cdot W_2^T\cdot Relu^{'}(W_1X+b_1)$$
 
-其中$Relu^{'}(\cdot)$为对$Relu$的导数，可以视为
+其中 $Relu^{'}(\cdot)$为对 $Relu$的导数，可以视为
 
-$$f(x) = \left\{
-\begin{array}{l}
-1\ \ \ \ \ \ if\ \ \ x > 0\\
-0\ \ \ \ \ \ if\ \ \ x < 0
-\end{array}
-\right.
 $$
+f(x) = 
+\begin{cases} 
+1 & \text{if } x > 0 \\
+0 & \text{if } x < 0 
+\end{cases}
+$$
+
 
 ## 训练结果
 
